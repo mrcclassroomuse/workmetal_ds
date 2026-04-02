@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Jewelry Collection | Work the Metal</title>
+   <!-- Linking to your CSS and Font Awesome for icons -->
+   <link rel="stylesheet" href="https://cloudflare.com">
+   <link rel="stylesheet" href="style.css">
+   <style>
+       /* Specific Styles for the Jewelry Grid */
+       .jewelry-grid {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+           gap: 30px;
+           padding: 40px 0;
+       }
+
+
+       .product-card {
+           background: var(--white);
+           border-radius: 10px;
+           overflow: hidden;
+           color: var(--dark-gray);
+           transition: transform 0.3s ease;
+           box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+       }
+
+
+       .product-card:hover {
+           transform: translateY(-10px);
+       }
+
+
+       .image-placeholder {
+           height: 250px;
+           background-color: #f0f0f0;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           color: var(--primary-orange);
+           border-bottom: 2px solid #eee;
+       }
+
+
+       .image-placeholder i {
+           font-size: 3.5rem;
+           margin-bottom: 10px;
+       }
+
+
+       .product-info {
+           padding: 20px;
+       }
+
+
+       .product-info h3 {
+           margin-bottom: 10px;
+           text-transform: uppercase;
+           letter-spacing: 1px;
+       }
+
+
+       .add-to-cart-btn {
+           display: block;
+           width: 100%;
+           background: var(--primary-orange);
+           color: white;
+           padding: 12px;
+           text-decoration: none;
+           border-radius: 5px;
+           font-weight: bold;
+           margin-top: 15px;
+           transition: background 0.3s;
+           border: none;
+           cursor: pointer;
+       }
+
+
+       .add-to-cart-btn:hover {
+           background: var(--hover-orange);
+       }
+   </style>
+</head>
+<body>
+
+
+   <!-- Navigation -->
+   <nav>
+       <a href="index.html" class="logo">Work the Metal</a>
+       <ul class="nav-links">
+           <li><a href="jewelry.html">Jewelry</a></li>
+           <li><a href="shop.html">Shop</a></li>
+           <li><a href="about.html">About Us</a></li>
+           <li><a href="contact.html">Contact Us</a></li>
+       </ul>
+       <div class="cart-status">
+           <i class="fas fa-shopping-cart" style="color: var(--dark-gray);"></i>
+           <span class="cart-badge" style="background: var(--primary-orange); color: white; padding: 2px 6px; border-radius: 50%; font-size: 0.8rem;">0</span>
+       </div>
+   </nav>
+
+
+   <!-- Main Content -->
+   <main>
+       <h1 style="font-size: 3rem; margin-bottom: 10px;">The Jewelry Collection</h1>
+       <p style="margin-bottom: 30px;">Hand-selected pieces to complement your unique style.</p>
+
+
+       <div class="jewelry-grid">
+           <!-- Earrings Section -->
+           <div class="product-card">
+               <img src="https://f.playcode.io/p-2649260/v-1/019d4f39-282a-703a-ad1d-043522e493aa/earrings.png" alt="Handcrafted 14k gold hoop earrings" class="product-img">
+                   <i class="fas fa-gem"></i>
+                  
+               </div>
+               <div class="product-info">
+                   <h3>Earrings</h3>
+                   <p>Studs, hoops, and statement drops.</p>
+                   <button class="add-to-cart-btn">Add to Cart</button>
+               </div>
+           </div>
+
+
+           <!-- Necklaces Section -->
+           <div class="product-card">
+       <img src="https://f.playcode.io/p-2649260/v-1/019d4f39-5462-7720-b1d2-c74c28f7674c/necklaces.png" alt="Handcrafted 14k gold hoop earrings" class="product-img">
+                   <i class="fas fa-certificate"></i>
+                  
+               </div>
+               <div class="product-info">
+                   <h3>Necklaces</h3>
+                   <p>Chains, pendants, and layering pieces.</p>
+                   <button class="add-to-cart-btn">Add to Cart</button>
+               </div>
+           </div>
+
+
+           <!-- Bracelets Section -->
+           <div class="product-card">
+                <img src="https://f.playcode.io/p-2649260/v-1/019d4f38-f998-760b-bb84-e9353f8f2f71/bracelet-.png" alt="Handcrafted 14k gold hoop earrings" class="product-img">
+                   <i class="fas fa-circle-notch"></i>
+               
+               </div>
+               <div class="product-info">
+                   <h3>Bracelets</h3>
+                   <p>Cuffs, bangles, and delicate links.</p>
+                   <button class="add-to-cart-btn">Add to Cart</button>
+               </div>
+           </div>
+
+
+           <!-- Rings Section -->
+           <div class="product-card">
+                 <img src="https://f.playcode.io/p-2649260/v-1/019d4f38-beef-74dc-a977-83787b8dbb75/rings.png" alt="Handcrafted 14k gold hoop earrings" class="product-img">
+                   <i class="fas fa-ring"></i>
+                 
+               </div>
+               <div class="product-info">
+                   <h3>Rings</h3>
+                   <p>Bands and statement settings.</p>
+                   <button class="add-to-cart-btn">Add to Cart</button>
+               </div>
+           </div>
+       </div>
+   </main>
+
+
+   <!-- Footer -->
+   <footer>
+       <div class="address-info">
+           <strong>Located in:</strong> Butchertown Market Building<br>
+           <strong>Address:</strong> 1201 Story Ave, Louisville, KY 40206<br>
+           <strong>Phone:</strong> (502) 584-2841<br>
+           <strong>Hours:</strong> Open · Closes 5 PM
+       </div>
+   </footer>
+
+
+   <!-- Linking to your JavaScript -->
+   <script src="script.js"></script>
+</body>
+</html>
+
+
+
