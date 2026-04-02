@@ -1,0 +1,134 @@
+/* Variables for easy color management */
+:root {
+   --primary-orange: #FF8C00;
+   --hover-orange: #e67e00;
+   --white: #ffffff;
+   --dark-gray: #333;
+   --overlay: rgba(0, 0, 0, 0.6);
+}
+
+
+/* Global Styles */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+
+body {
+   background: linear-gradient(var(--overlay), var(--overlay)),
+               url('https://playcode.io');
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   color: var(--white);
+}
+
+
+/* Navigation Bar */
+nav {
+   background-color: var(--white);
+   padding: 1rem 10%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+.logo {
+   color: var(--primary-orange);
+   font-size: 1.6rem;
+   font-weight: 800;
+   text-transform: uppercase;
+   text-decoration: none;
+}
+
+
+.nav-links {
+   list-style: none;
+   display: flex;
+   gap: 2rem;
+}
+
+
+.nav-links a {
+   text-decoration: none;
+   color: var(--dark-gray);
+   font-weight: 600;
+   transition: 0.3s;
+}
+
+
+.nav-links a:hover, .nav-links a.active {
+   color: var(--primary-orange);
+}
+
+
+/* Main Content Area */
+main, header {
+   flex: 1;
+   padding: 40px 10%;
+   text-align: center;
+}
+
+
+/* Footer Styling */
+footer {
+   background-color: var(--white);
+   color: var(--dark-gray);
+   padding: 40px 10%;
+   text-align: center;
+   border-top: 5px solid var(--primary-orange);
+   margin-top: auto;
+}
+
+
+.address-info strong {
+   color: var(--primary-orange);
+}
+
+
+/* Map & Contact Specifics */
+.map-wrapper {
+   border: 5px solid var(--white);
+   border-radius: 12px;
+   overflow: hidden;
+   margin-bottom: 20px;
+   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+.product-img {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 100%; /* Keeps the image responsive */
+   height: auto;
+   margin-bottom: 30px; /* Optional: adds space below the image */
+
+
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: -30px; /* Moves the image UP */
+   position: relative; /* Ensures it layers correctly */
+   z-index: 1;
+   max-width: 100%;
+   height: auto;
+}
+
+
+
+
+
+
+
+
+
