@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Shop All | Work the Metal</title>
+   <!-- Font Awesome and External CSS -->
+   <link rel="stylesheet" href="https://cloudflare.com">
+   <link rel="stylesheet" href="style.css">
+   <style>
+       /* Shop Specific Styles */
+       .shop-header {
+           padding: 60px 10%;
+           background: rgba(255, 255, 255, 0.1);
+           backdrop-filter: blur(5px);
+           margin-bottom: 40px;
+           border-bottom: 2px solid var(--primary-orange);
+       }
+
+
+       .product-grid {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+           gap: 30px;
+           margin-bottom: 60px;
+       }
+
+
+       .shop-card {
+           background: var(--white);
+           border-radius: 12px;
+           overflow: hidden;
+           color: var(--dark-gray);
+           transition: 0.3s;
+           position: relative;
+       }
+
+
+       .shop-card:hover {
+           transform: translateY(-5px);
+           box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+       }
+
+
+       .badge {
+           position: absolute;
+           top: 15px;
+           right: 15px;
+           background: var(--primary-orange);
+           color: white;
+           padding: 5px 12px;
+           border-radius: 20px;
+           font-size: 0.8rem;
+           font-weight: bold;
+           z-index: 10;
+       }
+
+
+       .img-placeholder {
+           height: 280px;
+           background: #f4f4f4;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           color: #ccc;
+       }
+
+
+       .img-placeholder i {
+           font-size: 4rem;
+           margin-bottom: 10px;
+           color: var(--primary-orange);
+           opacity: 0.5;
+       }
+
+
+       .shop-info {
+           padding: 20px;
+           text-align: left;
+       }
+
+
+       .price {
+           font-size: 1.2rem;
+           font-weight: bold;
+           color: var(--primary-orange);
+           display: block;
+           margin: 10px 0;
+       }
+
+
+       .add-to-cart-btn {
+           width: 100%;
+           background: var(--dark-gray);
+           color: white;
+           border: none;
+           padding: 12px;
+           border-radius: 5px;
+           font-weight: bold;
+           cursor: pointer;
+           transition: 0.3s;
+       }
+
+
+       .add-to-cart-btn:hover {
+           background: var(--primary-orange);
+       }
+   </style>
+</head>
+<body>
+
+
+   <!-- Navigation -->
+   <nav>
+       <a href="index.html" class="logo">Work the Metal</a>
+       <ul class="nav-links">
+           <li><a href="jewelry.html">Jewelry</a></li>
+           <li><a href="shop.html">Shop</a></li>
+           <li><a href="about.html">About Us</a></li>
+           <li><a href="contact.html">Contact Us</a></li>
+       </ul>
+       <div class="cart-status">
+           <i class="fas fa-shopping-cart" style="color: var(--dark-gray);"></i>
+           <span class="cart-badge" style="background: var(--primary-orange); color: white; padding: 2px 6px; border-radius: 50%; font-size: 0.8rem;">0</span>
+       </div>
+   </nav>
+
+
+   <div class="shop-header">
+       <h1>Curated Collections</h1>
+       <p>Explore our latest finds in home decor, fashion, and unique gifts.</p>
+   </div>
+
+
+   <!-- Main Content -->
+   <main>
+       <div class="product-grid">
+           <!-- Product 1 -->
+           <div class="shop-card">
+               <span class="badge">New Arrival</span>
+                <img src="https://f.playcode.io/p-2649260/v-1/019d4f44-f4b7-70fc-9a55-cbb1f8bc3084/vc-pillow.png" alt="Handcrafted 14k gold hoop earrings" class="product-img">
+                   <i class="fas fa-couch"></i>
+                  
+               </div>
+               <div class="shop-info">
+                   <h3>Velvet Accent Pillow</h3>
+                   <span class="price">$42.00</span>
+                   <button class="add-to-cart-btn">Add to Cart</button>
+               </div>
+           </div>
+
+
+           <!-- Product 2 -->
+           <div class="shop-card">
+                 <img src="https://f.playcode.io/p-2649260/v-1/019d4f44-8fbd-75dc-9687-d117ee694622/scarf-.png" alt="Handcrafted 14k gold hoop earrings" class="product-img">
+                   <i class="fas fa-tshirt"></i>
+                 
+               </div>
+               <div class="shop-info">
+                   <h3>Boutique Silk Scarf</h3>
+                   <span class="price">$28.00</span>
+                   <button class="add-to-cart-btn">Add to Cart</button>
+               </div>
+           </div>
+
+
+           <!-- Product 3 -->
+           <div class="shop-card">
+               <span class="badge">Best Seller</span>
+                <img src="https://f.playcode.io/p-2649260/v-1/019d4f44-c920-750b-a37c-a1064ddb3f5d/glass.png" alt="Handcrafted 14k gold hoop earrings" class="product-img">
+                   <i class="fas fa-wine-glass"></i>
+                 
+               </div>
+               <div class="shop-info">
+                   <h3>Artisanal Glass Set</h3>
+                   <span class="price">$55.00</span>
+                   <button class="add-to-cart-btn">Add to Cart</button>
+               </div>
+           </div>
+
+
+           <!-- Product 4 -->
+           <div class="shop-card">
+               <img src="https://f.playcode.io/p-2649260/v-1/019d4f45-2468-708d-a410-1003fc05462e/candle.png" alt="Handcrafted 14k gold hoop earrings" class="product-img">
+                   <i class="fas fa-spa"></i>
+                  
+               </div>
+               <div class="shop-info">
+                   <h3>Hand-Poured Candle</h3>
+                   <span class="price">$24.00</span>
+                   <button class="add-to-cart-btn">Add to Cart</button>
+               </div>
+           </div>
+       </div>
+   </main>
+
+
+   <!-- Footer -->
+   <footer>
+       <div class="address-info">
+           <strong>Located in:</strong> Butchertown Market Building<br>
+           <strong>Address:</strong> 1201 Story Ave, Louisville, KY 40206<br>
+           <strong>Phone:</strong> (502) 584-2841<br>
+           <strong>Hours:</strong> Open · Closes 5 PM
+       </div>
+   </footer>
+
+
+   <!-- Linking to your JavaScript -->
+   <script src="script.js"></script>
+</body>
+</html>
+
+
+
